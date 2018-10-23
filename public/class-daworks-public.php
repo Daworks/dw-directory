@@ -431,12 +431,28 @@ class Daworks_Public {
 	public function show_directory() {
 		$this->enqueue_scripts();
 		global $wpdb;
-
-		(int) $c_no = (isset($_GET['c_no'])) ? get_query_var('c_no',$_GET['c_no']) : null;
-		(int) $ref = (isset($_GET['ref'])) ? get_query_var('ref', $_GET['ref']) : null;
-		(int) $ref_n = (isset($_GET['ref_n'])) ? get_query_var('ref_n', $_GET['ref_n']) : null;
-		(int) $lev = (isset($_GET['lev'])) ? get_query_var('lev', $_GET['lev']) : null;
-		(int) $step = (isset($_GET['step'])) ? get_query_var('step', $_GET['step']) : null;
+		
+		$c_no = null;
+		$ref = null;
+		$ref_n = null;
+		$lev = null;
+		$step = null;
+		
+		if ( isset($_GET['c_no']) ) {
+			$c_no = get_query_var('c_no', $_GET['c_no']);
+		}
+		if ( isset($_GET['ref']) ) {
+			$ref = get_query_var('ref', $_GET['ref']);
+		}
+		if ( isset($_GET['ref_n']) ) {
+			$ref_n = get_query_var('ref_n', $_GET['ref_n']);
+		}
+		if ( isset($_GET['lev']) ) {
+			$lev = get_query_var('lev', $_GET['lev']);
+		}
+		if ( isset($_GET['step']) ) {
+			$step = get_query_var('step', $_GET['step']);
+		}
 
 		$out = '<div class="dw-container">';
 		$out .= $this->get_search_form();

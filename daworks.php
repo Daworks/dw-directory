@@ -2,17 +2,17 @@
 
 /**
  *
- * @link              http://daworks.org
- * @since             1.0.0
+ * @link              http://daworks.io
+ * @since             1.0.1
  * @package           Daworks
  *
  * @wordpress-plugin
  * Plugin Name:       DW Directory Service
- * Plugin URI:        http://daworks.org
+ * Plugin URI:        http://daworks.io
  * Description:       DW Directory Service는 워드프레스에 디렉토리 서비스 기능을 사용할 수 있도록 해줍니다. 디렉토리 서비스를 하려고 하는 페이지에 숏코드 [dw-directory] 를 붙여 넣으면 됩니다.
  * Version:           1.0
  * Author:            디자인아레테
- * Author URI:        http://daworks.org
+ * Author URI:        http://daworks.io
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       daworks
